@@ -5,9 +5,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(220, 255, 233);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.footer{
+  margin-top: 1rem;
+  padding: 1rem;
+  //background-color: rgb(116, 207, 255);
+  background: linear-gradient(0deg, rgb(175, 234, 255) 20%, rgb(220,255,233) 75%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+A {
+  text-decoration: none; /* Убирает подчеркивание для ссылок */
+  color: #5a5a5a;
 }
