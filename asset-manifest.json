@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/printservice/static/css/main.d13bec73.chunk.css",
+    "main.js": "/printservice/static/js/main.9c1f7573.chunk.js",
+    "main.js.map": "/printservice/static/js/main.9c1f7573.chunk.js.map",
+    "runtime-main.js": "/printservice/static/js/runtime-main.bebf82b1.js",
+    "runtime-main.js.map": "/printservice/static/js/runtime-main.bebf82b1.js.map",
+    "static/css/2.31461e4f.chunk.css": "/printservice/static/css/2.31461e4f.chunk.css",
+    "static/js/2.993eba69.chunk.js": "/printservice/static/js/2.993eba69.chunk.js",
+    "static/js/2.993eba69.chunk.js.map": "/printservice/static/js/2.993eba69.chunk.js.map",
+    "static/js/3.45e2b8f5.chunk.js": "/printservice/static/js/3.45e2b8f5.chunk.js",
+    "static/js/3.45e2b8f5.chunk.js.map": "/printservice/static/js/3.45e2b8f5.chunk.js.map",
+    "index.html": "/printservice/index.html",
+    "static/css/2.31461e4f.chunk.css.map": "/printservice/static/css/2.31461e4f.chunk.css.map",
+    "static/css/main.d13bec73.chunk.css.map": "/printservice/static/css/main.d13bec73.chunk.css.map",
+    "static/js/2.993eba69.chunk.js.LICENSE.txt": "/printservice/static/js/2.993eba69.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/printservice/static/media/background2.31094cb1.png",
+    "static/media/copier200.918c6bb9.png": "/printservice/static/media/copier200.918c6bb9.png",
+    "static/media/printer200.8ba8f540.png": "/printservice/static/media/printer200.8ba8f540.png",
+    "static/media/scanner200.6acdaf47.png": "/printservice/static/media/scanner200.6acdaf47.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bebf82b1.js",
+    "static/css/2.31461e4f.chunk.css",
+    "static/js/2.993eba69.chunk.js",
+    "static/css/main.d13bec73.chunk.css",
+    "static/js/main.9c1f7573.chunk.js"
+  ]
+}
