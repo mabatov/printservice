@@ -5,7 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(220, 255, 233);
+  background-color: rgb(230, 244, 255);
+
+  background-image: url('./img/background2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
 }
 
 code {
@@ -22,9 +28,26 @@ code {
   bottom: 0;
   left: 0;
   width: 100%;
+  opacity: 0.6;
 }
 
 A {
   text-decoration: none; /* Убирает подчеркивание для ссылок */
-  color: #5a5a5a;
+  color: #3b3b3b;
+}
+
+#b1 {
+  background: #5abdff;
+}
+
+#b1:disabled {
+  opacity: 0.3;
+  animation: none;
+  color: gray;
+}
+
+#pricedesc {
+  /*text-shadow:0 0 30px #ffffff;*/
+  white-space: pre-line;
+  color: #868686;
 }
