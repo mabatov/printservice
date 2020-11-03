@@ -46,15 +46,15 @@ const Click = (a) => {
     let selectFactor1 = service.length
     let selectFactor2 = pageCount
 
-    if (selectFactor1 == 0) {
+    if (selectFactor1 === 0) {
         alert('Выберите услугу')
     }
 
-    if (selectFactor1 != 0 && selectFactor2 == '') {
+    if (selectFactor1 !== 0 && selectFactor2 === '') {
         alert('Введите количество листов')
     }
 
-    if (selectFactor1 != 0 && selectFactor2 != '') {
+    if (selectFactor1 !== 0 && selectFactor2 !== '') {
 
         //main logic
         /*
@@ -69,7 +69,7 @@ const Click = (a) => {
         📄11+ страниц - 8 руб/лист.
         * */
 
-        if (service[0].id == 1 || service[0].id == 2) {
+        if (service[0].id === 1 || service[0].id === 2) {
 
             console.log(pageCount)
 
@@ -100,7 +100,7 @@ const Click = (a) => {
             }
         }
 
-        if (service[0].id == 3) {
+        if (service[0].id === 3) {
             if (pageCount >= 1 && pageCount <= 5) {
                 result.innerHTML = 'Ваша цена составила: ' + (pageCount * 12) + ' руб.'
                 pricedesc.innerHTML = '📄1-5 страниц - 12 руб/лист,\n' +
