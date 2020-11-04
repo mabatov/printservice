@@ -14,19 +14,26 @@ const CardList = ({printServices}) => {
             <div>
                 <input
                     id='input1'
-                    className='pa3 ba b--light-blue br3 ma3 bg-lightest-blue shadow-5'
+                    className='pa3 ba b--light-blue br3 ma2 bg-lightest-blue shadow-5'
                     type='number' max='500'
-                    placeholder='Укажите количество страниц'
+                    placeholder='Количество страниц'
                 />
+
+                <div className="form-check">
+                    <input type="checkbox"
+                           className="form-check-input pa3 ba b--light-blue br3 ma2 bg-lightest-blue shadow-5"
+                           id="deliveryCheck"/>
+                    <label className="form-check-label" htmlFor="deliveryCheck" id="deliveryText">🚚 Нужна доставка до двери</label>
+                </div>
             </div>
 
-            <button id='b1' className='tc b--light-blue bg-light-blue ba dib br3 pa3 ma2 grow shadow-5'
+
+            <button id='b1' className='tc b--light-blue bg-light-blue ba dib br3 pa3 ph4 ma3 grow shadow-5'
                     onClick={(a) => Click(a)}>Рассчитать
             </button>
 
             <p id='result'></p>
             <p id='pricedesc'></p>
-
 
 
         </div>
@@ -40,6 +47,7 @@ const Click = (a) => {
 
     let service = document.getElementsByName("selected")
     let pageCount = document.getElementById('input1').value
+    let deliveryPrice = document.getElementById("deliveryCheck").checked ? 30 : 0
     let result = document.getElementById('result')
     let pricedesc = document.getElementById('pricedesc')
 
@@ -73,20 +81,20 @@ const Click = (a) => {
 
             console.log(pageCount)
 
-            if (pageCount >= 1 && pageCount <= 20) {
-                result.innerHTML = 'Ваша цена составила: ' + (pageCount * 5) + ' руб.'
+            if (pageCount >= 1 && pageCount <= 10) {
+                result.innerHTML = 'Стоимость услуги составит: ' + (pageCount * 5 + deliveryPrice) + ' руб.'
                 pricedesc.innerHTML = '📄1-10 страниц - 5 руб/лист\n' +
                     '        📄11-50 страниц - 4 руб/лист,\n' +
                     '        📄51+ страниц - 3 руб/лист.'
             }
-            if (pageCount >= 21 && pageCount <= 40) {
-                result.innerHTML = 'Ваша цена составила: ' + (pageCount * 4) + ' руб.'
+            if (pageCount >= 11 && pageCount <= 50) {
+                result.innerHTML = 'Стоимость услуги составит: ' + (pageCount * 4 + deliveryPrice) + ' руб.'
                 pricedesc.innerHTML = '📄1-10 страниц - 5 руб/лист\n' +
                     '        📄11-50 страниц - 4 руб/лист,\n' +
                     '        📄51+ страниц - 3 руб/лист.'
             }
-            if (pageCount >= 41 && pageCount <= 500) {
-                result.innerHTML = 'Ваша цена составила: ' + (pageCount * 3) + ' руб.'
+            if (pageCount >= 51 && pageCount <= 500) {
+                result.innerHTML = 'Стоимость услуги составит: ' + (pageCount * 3 + deliveryPrice) + ' руб.'
                 pricedesc.innerHTML = '📄1-10 страниц - 5 руб/лист\n' +
                     '        📄11-50 страниц - 4 руб/лист,\n' +
                     '        📄51+ страниц - 3 руб/лист.'
@@ -101,20 +109,20 @@ const Click = (a) => {
         }
 
         if (service[0].id == 3) {
-            if (pageCount >= 1 && pageCount <= 5) {
-                result.innerHTML = 'Ваша цена составила: ' + (pageCount * 12) + ' руб.'
+            if (pageCount >= 1 && pageCount <= 20) {
+                result.innerHTML = 'Стоимость услуги составит: ' + (pageCount * 12 + deliveryPrice) + ' руб.'
                 pricedesc.innerHTML = '📄1-20 страниц - 12 руб/лист,\n' +
                     '        📄21-50 страниц - 10 руб/лист,\n' +
                     '        📄51+ страниц - 8 руб/лист.'
             }
-            if (pageCount >= 6 && pageCount <= 10) {
-                result.innerHTML = 'Ваша цена составила: ' + (pageCount * 10) + ' руб.'
+            if (pageCount >= 21 && pageCount <= 50) {
+                result.innerHTML = 'Стоимость услуги составит: ' + (pageCount * 10 + deliveryPrice) + ' руб.'
                 pricedesc.innerHTML = '📄1-20 страниц - 12 руб/лист,\n' +
                     '        📄21-50 страниц - 10 руб/лист,\n' +
                     '        📄51+ страниц - 8 руб/лист.'
             }
-            if (pageCount >= 11 && pageCount <= 500) {
-                result.innerHTML = 'Ваша цена составила: ' + (pageCount * 8) + ' руб.'
+            if (pageCount >= 51 && pageCount <= 500) {
+                result.innerHTML = 'Стоимость услуги составит: ' + (pageCount * 8 + deliveryPrice) + ' руб.'
                 pricedesc.innerHTML = '📄1-20 страниц - 12 руб/лист,\n' +
                     '        📄21-50 страниц - 10 руб/лист,\n' +
                     '        📄51+ страниц - 8 руб/лист.'

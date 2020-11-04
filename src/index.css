@@ -12,6 +12,15 @@ body {
   background-attachment: fixed;
   background-size: cover;
 
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+  margin: 0;
 }
 
 code {

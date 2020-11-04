@@ -2,8 +2,10 @@ import React from "react";
 
 const Footer = () => (
     <div className="footer">
-            <a href="https://vk.com/romanticprint" title="VK">VK </a>
-            <a href="https://t.me/romanticprint" title="Telegram">TG</a>
+        Связаться:
+            <a href="https://vk.com/print_romantic" target="_blank" title="VK"> VK </a>
+            <a href="https://t.me/print_romantic" target="_blank" title="Telegram">TG</a>
+            <a href="mailto:print_romantic@mail.ru" title="Telegram"> ✉️</a>
     </div>
 );
 
