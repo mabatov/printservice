@@ -31,18 +31,22 @@ code {
 .footer{
   margin-top: 1rem;
   padding: 1rem;
-  background: linear-gradient(0deg, rgb(175, 234, 255) 20%, rgb(220,255,233) 75%);
+  //background: linear-gradient(0deg, rgb(175, 234, 255) 20%, rgb(220,255,233) 75%);
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  opacity: 0.6;
+  //opacity: 0.6;
 }
 
-A {
-  text-decoration: none; /* Убирает подчеркивание для ссылок */
-  color: #3b3b3b;
+#img_footer{
+  opacity: 1;
 }
+
+/*A {
+  text-decoration: none; !* Убирает подчеркивание для ссылок *!
+  color: #3b3b3b;
+}*/
 
 #b1 {
   background: #5abdff;
