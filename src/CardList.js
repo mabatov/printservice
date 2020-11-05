@@ -135,6 +135,8 @@ const Click = (a) => {
                     '        📄51+ страниц - 8 руб/лист.'
             }
         }
+
+        window.scrollTo(0,document.body.scrollHeight);
     }
 }
 

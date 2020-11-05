@@ -27,6 +27,7 @@ const Click = (a) => {
 
     //isClicked = true;
 
+
     if (a.id == 3) {
         document.getElementById("deliveryCheck").disabled = true
         document.getElementById("deliveryCheck").checked = false;
@@ -58,6 +59,8 @@ const Click = (a) => {
 
         currentId = a.id;
     }
+
+    if(currentId != null) document.getElementById("input1").focus();
 
     //console.log(currentId)
 }

@@ -33,7 +33,7 @@ code {
   padding: 1rem;
   //background-color: rgb(116, 207, 255);
   background: linear-gradient(0deg, rgb(175, 234, 255) 20%, rgb(220,255,233) 75%);
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -59,4 +59,12 @@ A {
   /*text-shadow:0 0 30px #ffffff;*/
   white-space: pre-line;
   color: #868686;
+}
+
+
+
+@media screen and (min-width: 900px) {
+  body {
+    background-color: rgb(230, 244, 255);
+  }
 }
