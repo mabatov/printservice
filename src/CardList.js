@@ -45,6 +45,8 @@ const Click = (a) => {
 
     //disabled='true' выше
 
+    console.log(window.innerHeight);
+
     let service = document.getElementsByName("selected")
     let pageCount = document.getElementById('input1').value
     let deliveryPrice = document.getElementById("deliveryCheck").checked ? 30 : 0

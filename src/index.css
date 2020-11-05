@@ -31,9 +31,8 @@ code {
 .footer{
   margin-top: 1rem;
   padding: 1rem;
-  //background-color: rgb(116, 207, 255);
   background: linear-gradient(0deg, rgb(175, 234, 255) 20%, rgb(220,255,233) 75%);
-  position: relative;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -63,8 +62,27 @@ A {
 
 
 
-@media screen and (min-width: 900px) {
-  body {
-    background-color: rgb(230, 244, 255);
+/* mobile */
+@media screen and (max-width: 768px){
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+
+  .mb1 {
+    font-size: x-large;
+  }
+}
+
+
+/* mobile */
+@media screen and (max-height: 729px){
+  .footer {
+    position: relative;
+  }
+
+  .mb1 {
+    font-size: x-large;
   }
 }
