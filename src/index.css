@@ -73,6 +73,11 @@ A {
   .mb1 {
     font-size: x-large;
   }
+
+  button {
+    max-width: 50%;
+    height: auto;
+  }
 }
 
 
@@ -85,4 +90,10 @@ A {
   .mb1 {
     font-size: x-large;
   }
+
+  button {
+    max-width: 50%;
+    height: auto;
+  }
+
 }

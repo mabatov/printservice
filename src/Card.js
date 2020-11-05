@@ -60,7 +60,7 @@ const Click = (a) => {
         currentId = a.id;
     }
 
-    if(currentId != null) document.getElementById("input1").focus();
+    //if(currentId != null) document.getElementById("input1").focus();
 
     //console.log(currentId)
 }

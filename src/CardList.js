@@ -45,7 +45,7 @@ const Click = (a) => {
 
     //disabled='true' выше
 
-    console.log(window.innerHeight);
+    //console.log(window.innerHeight);
 
     let service = document.getElementsByName("selected")
     let pageCount = document.getElementById('input1').value
