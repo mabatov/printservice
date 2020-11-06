@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(230, 244, 255);
 
-  background-image: url('./img/background.png');
+  background-image: url('./img/backgroundc.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -98,6 +98,10 @@ code {
   button {
     max-width: 50%;
     height: auto;
+  }
+
+  body {
+    background-image: url('./img/backgroundc.png');
   }
 
 }
