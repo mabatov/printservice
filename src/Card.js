@@ -60,7 +60,10 @@ const Click = (a) => {
         currentId = a.id;
     }
 
-    //if(currentId != null) document.getElementById("input1").focus();
+    if(currentId != null) {
+        const input = document.getElementById('input1');
+        input.scrollIntoView({behavior: "smooth"});
+    }
 
     //console.log(currentId)
 }
