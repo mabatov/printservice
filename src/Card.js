@@ -64,14 +64,35 @@ const Click = (a) => {
     //if(currentId != null) document.getElementById("input1").focus();
     if(currentId != null) {
         const input = document.getElementById('input1');
-        input.scrollIntoView({behavior: "smooth"});
+        //input.scrollIntoView({behavior: "smooth"});
+
+        // https://stackoverflow.com/questions/51229742/javascript-window-scroll-behavior-smooth-not-working-in-safari
+        function SmoothVerticalScrolling(e, time, where) {
+            var eTop = e.getBoundingClientRect().top;
+            var eAmt = eTop / 100;
+            var curTime = 0;
+            while (curTime <= time) {
+                window.setTimeout(SVS_B, curTime, eAmt, where);
+                curTime += time / 100;
+            }
+        }
+
+        function SVS_B(eAmt, where) {
+            if(where == "center" || where == "")
+                window.scrollBy(0, eAmt / 2);
+            if (where == "top")
+                window.scrollBy(0, eAmt);
+        }
+
+        SmoothVerticalScrolling(input, 275, "center");
+
+
 
 
         function delay(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
 
-        //document.getElementById("input1").focus();
         delay(500).then(() => document.getElementById("input1").focus());
     }
 

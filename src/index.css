@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 
   font-family: 'Roboto Slab', serif;
 }
@@ -140,7 +141,7 @@ code {
 
   }
 
-  .ma2 {
+  /*.ma2 {
     margin: 0.2rem;
-  }
+  }*/
 }
