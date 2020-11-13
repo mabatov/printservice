@@ -84,7 +84,7 @@ const Click = (a) => {
                 window.scrollBy(0, eAmt);
         }
 
-        SmoothVerticalScrolling(input, 275, "center");
+        SmoothVerticalScrolling(input, 275, "top");
 
 
 
