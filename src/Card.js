@@ -9,10 +9,10 @@ const Card = ({id, name, price, img}) => {
         <button id={id} name={currentId}
                 className='tc b--lightest-blue bg-lightest-blue ba dib br3 pa3 ma2 grow shadow-5'
                 onClick={(a) => Click({id})}>
-            <img alt='print' src={img}/>
+            <img id='cardImg' alt='print' src={img}/>
             <div>
                 <h2>{name}</h2>
-                <p>{price}</p>
+                <h8>{price}</h8>
             </div>
 
         </button>
@@ -62,7 +62,7 @@ const Click = (a) => {
 
     if(currentId != null) {
         const input = document.getElementById('input1');
-        input.scrollIntoView({behavior: "smooth"});
+        input.scrollIntoView({behavior: "auto"});
     }
 
     //console.log(currentId)

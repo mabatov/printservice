@@ -7,7 +7,7 @@ export const printServices = [
     },
     {
         id: 2,
-        name: 'Копирование',
+        name: 'Копия',
         price: 'от 3 руб/лист',
         img: './img/copier200.png'
     },
