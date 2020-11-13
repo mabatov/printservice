@@ -99,11 +99,10 @@ code {
     font-size: x-large;
   }
 
-  #cardImg {
+  /*#cardImg {
     width: 80%;
     height: auto;
-    padding: 0;
-  }
+  }*/
 
   .card {
     padding: 0;
@@ -116,8 +115,9 @@ code {
   }
 
   h8 {
-    font-size: xx-small;
+    font-size: x-small;
     padding: 0;
+    margin: 0;
   }
 
   button {
@@ -125,6 +125,7 @@ code {
     height: auto;
     padding: 0;
     margin: 0;
+    align-content: center;
   }
 
   #input1 {
