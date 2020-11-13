@@ -82,11 +82,14 @@ code {
     max-width: 50%;
     height: auto;
   }
+
+
 }
 
 
 /* mobile */
 @media screen and (max-height: 729px){
+
   .footer {
     position: relative;
   }
@@ -96,7 +99,7 @@ code {
   }
 
   #cardImg {
-    width: 60%;
+    width: 80%;
     height: auto;
     padding: 0;
   }
@@ -112,7 +115,7 @@ code {
   }
 
   h8 {
-    font-size: x-small;
+    font-size: xx-small;
     padding: 0;
   }
 
@@ -137,4 +140,7 @@ code {
 
   }
 
+  .ma2 {
+    margin: 0.2rem;
+  }
 }

@@ -61,11 +61,19 @@ const Click = (a) => {
     }
 
 
-    if(currentId != null) document.getElementById("input1").focus();
-    /*if(currentId != null) {
+    //if(currentId != null) document.getElementById("input1").focus();
+    if(currentId != null) {
         const input = document.getElementById('input1');
-        input.scrollIntoView({behavior: "auto"});
-    }*/
+        input.scrollIntoView({behavior: "smooth"});
+
+
+        function delay(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        //document.getElementById("input1").focus();
+        delay(500).then(() => document.getElementById("input1").focus());
+    }
 
     //console.log(currentId)
 }
