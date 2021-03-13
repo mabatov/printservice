@@ -1,13 +1,19 @@
-const reportWebVitals = onPerfEntry => {
-  if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
-  }
-};
-
-export default reportWebVitals;
+JScriptCodeDom.CodeParseException:  Unexpected Char : ')'  , Line 9, Char 5 ---> System.Exception:  Unexpected Char : ')' 
+   at JScriptCodeDom.CodeParser.InternalParseStatementCore()
+   at JScriptCodeDom.CodeParser.InternalParseStatement()
+   at JScriptCodeDom.CodeParser.ParseStatement()
+   at JScriptCodeDom.CodeParser.ParseBlock()
+   at JScriptCodeDom.CodeParser.ParseLambdaFunction(CodeFunctionExpression func)
+   at JScriptCodeDom.CodeParser.ContinueExpressionCore(CodeExpression leftexp, Boolean allowcommer, Boolean parsingFunctionStatement)
+   at JScriptCodeDom.CodeParser.ContinueExpression(CodeExpression leftexp, Boolean allowcommer, Boolean parsingFunctionStatement)
+   at JScriptCodeDom.CodeParser.ParseVarStatement(String vartype, Boolean processExport)
+   at JScriptCodeDom.CodeParser.InternalParseStatementCore()
+   at JScriptCodeDom.CodeParser.InternalParseStatement()
+   at JScriptCodeDom.CodeParser.ParseStatement()
+   at JScriptCodeDom.CodeParser.ParseBlock()
+   at JScriptCodeDom.CodeParser.Parse(String code, String filename, Int32 lineoffset, Boolean keeplinenum)
+   --- End of inner exception stack trace ---
+   at JScriptCodeDom.CodeParser.Parse(String code, String filename, Int32 lineoffset, Boolean keeplinenum)
+   at ProtectorV1.Protect(String[] codes)
+   at ProtectorV1.Protect(String code)
+   at ASP.javascript_obfuscator_aspx.Button1_Click(Object sender, EventArgs e)

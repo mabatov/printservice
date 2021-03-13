@@ -1,18 +1,25 @@
-import React from 'react';
-import CardList from "./CardList";
-import {printServices} from "./printServices";
-import Footer from "./Footer";
-
-const App = () => {
-    return(
-        <div className='tc'>
-            <h1 className='mb1'>Печать в ЖК "Я - Романтик"</h1>
-            <CardList printServices={printServices} />
-            {/*<Counter id={currentId}/>*/}
-            <Footer/>
-
-        </div>
-    )
-}
-
-export default App;
+JScriptCodeDom.CodeParseException: Unexpected Operator:< , Line 8, Char 0 ---> System.Exception: Unexpected Operator:<
+   at JScriptCodeDom.CodeParser.ParseLazyExpressionCore(Boolean bthrowerr)
+   at JScriptCodeDom.CodeParser.ParseLazyExpression(Boolean bthrowerr)
+   at JScriptCodeDom.CodeParser.ParseForQuoteStart()
+   at JScriptCodeDom.CodeParser.ParseLazyExpressionCore(Boolean bthrowerr)
+   at JScriptCodeDom.CodeParser.ParseLazyExpression(Boolean bthrowerr)
+   at JScriptCodeDom.CodeParser.InternalParseStatementCore()
+   at JScriptCodeDom.CodeParser.InternalParseStatement()
+   at JScriptCodeDom.CodeParser.ParseStatement()
+   at JScriptCodeDom.CodeParser.ParseBlock()
+   at JScriptCodeDom.CodeParser.ParseLambdaFunction(CodeFunctionExpression func)
+   at JScriptCodeDom.CodeParser.ParseForQuoteStart()
+   at JScriptCodeDom.CodeParser.ParseLazyExpressionCore(Boolean bthrowerr)
+   at JScriptCodeDom.CodeParser.ParseLazyExpression(Boolean bthrowerr)
+   at JScriptCodeDom.CodeParser.ParseVarStatement(String vartype, Boolean processExport)
+   at JScriptCodeDom.CodeParser.InternalParseStatementCore()
+   at JScriptCodeDom.CodeParser.InternalParseStatement()
+   at JScriptCodeDom.CodeParser.ParseStatement()
+   at JScriptCodeDom.CodeParser.ParseBlock()
+   at JScriptCodeDom.CodeParser.Parse(String code, String filename, Int32 lineoffset, Boolean keeplinenum)
+   --- End of inner exception stack trace ---
+   at JScriptCodeDom.CodeParser.Parse(String code, String filename, Int32 lineoffset, Boolean keeplinenum)
+   at ProtectorV1.Protect(String[] codes)
+   at ProtectorV1.Protect(String code)
+   at ASP.javascript_obfuscator_aspx.Button1_Click(Object sender, EventArgs e)

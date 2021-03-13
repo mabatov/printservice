@@ -1,17 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import 'tachyons';
-import App from './App'
-
-
-ReactDOM.render(
-    < App/>
-  , document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+JScriptCodeDom.CodeParseException: RegExp have line break , Line 10, Char 11 ---> System.Exception: RegExp have line break
+   at JScriptCodeDom.CodeReader.ReadRegExp()
+   at JScriptCodeDom.CodeReader.ReadToken(Boolean previsexpression)
+   at JScriptCodeDom.CodeParser.InternalParseStatementCore()
+   at JScriptCodeDom.CodeParser.InternalParseStatement()
+   at JScriptCodeDom.CodeParser.ParseStatement()
+   at JScriptCodeDom.CodeParser.ParseBlock()
+   at JScriptCodeDom.CodeParser.Parse(String code, String filename, Int32 lineoffset, Boolean keeplinenum)
+   --- End of inner exception stack trace ---
+   at JScriptCodeDom.CodeParser.Parse(String code, String filename, Int32 lineoffset, Boolean keeplinenum)
+   at ProtectorV1.Protect(String[] codes)
+   at ProtectorV1.Protect(String code)
+   at ASP.javascript_obfuscator_aspx.Button1_Click(Object sender, EventArgs e)
